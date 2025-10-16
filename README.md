@@ -1,3 +1,9 @@
 # beat_predictor
-tiny helper that guesses bpm from signal duration and rms.
-made it for checking sample packs before dropping into abelton.
+rough bpm estimator prototype.  
+uses clip duration + rough rms amplitude to guess tempo, then simulates tempo variation and swing.  
+outputs bpm graph + json summary.
+
+## usage
+```bash
+python beat_predictor.py sample.wav
+```
